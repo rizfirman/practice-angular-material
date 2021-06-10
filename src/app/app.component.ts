@@ -68,8 +68,10 @@ export class AppComponent {
     });
   }
   deleteRowData(row_obj){
+    
     this.dataSource = this.dataSource.filter((value,key)=>{
       return value.id != row_obj.id;
     });
+    
   }
 }

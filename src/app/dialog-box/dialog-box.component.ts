@@ -28,7 +28,14 @@ export class DialogBoxComponent {
   }
 
   doAction(){
-    this.dialogRef.close({event:this.action,data:this.local_data});
+    let cnfrm = confirm('Are you sure?');
+    if(this.action == "Update") {
+       if (cnfrm == true) {
+        this.dialogRef.close({event:this.action,data:this.local_data});
+      } else  {
+        false
+      }
+    }
   }
 
   closeDialog(){
