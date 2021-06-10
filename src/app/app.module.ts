@@ -12,6 +12,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { DialogBoxComponent } from './dialog-box/dialog-box.component';
+import {MaterialModule} from './material/material.module'
 
 @NgModule({
   declarations: [
@@ -23,12 +24,7 @@ import { DialogBoxComponent } from './dialog-box/dialog-box.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    MatTableModule,
-    MatDialogModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatInputModule,
+   MaterialModule,
     ReactiveFormsModule
   ],
   providers: [],

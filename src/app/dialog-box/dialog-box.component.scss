@@ -1,0 +1,10 @@
+.mat-dialog-actions {
+  .mat-button:nth-child(1):hover {
+    background-color: green;
+    transition: 0.5s;
+  }
+  .mat-button:nth-child(2):hover {
+    background-color: red;
+    transition: 0.5s;
+  }
+}

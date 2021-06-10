@@ -1,0 +1,73 @@
+.main-content {
+  .mat-button {
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    background-color: rgb(51, 38, 112);
+  }
+  .my-fab {
+    width: 100px;
+    height: 100px;
+    line-height: 14px;
+    font-size: 14px;
+
+    h2 {
+      font-size: 20px;
+      padding-top: 15px;
+    }
+  }
+  .my-fab:hover {
+    background-color: #fff;
+    h2 {
+      color: #000;
+    }
+  }
+  table {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    background-color: rgba(9, 111, 121, 1);
+    .mat-icon {
+      font-size: 25px;
+    }
+    .vertical-line {
+      font-size: 20px;
+    }
+    .delete:hover {
+      color: red;
+      transition: 0.5s;
+    }
+    .edit:hover {
+      color: green;
+      transition: 0.5s;
+    }
+  }
+  .mat-row {
+    color: #fff;
+  }
+  .mat-header-cell {
+    text-align: center;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    font-size: 20px;
+  }
+  .mat-header-cell:nth-child(4) {
+    border-right: 0;
+  }
+  .mat-cell {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+
+  .mat-cell:nth-child(4) {
+    border-right: 0;
+  }
+
+  a {
+    cursor: pointer;
+  }
+}
