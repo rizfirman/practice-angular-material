@@ -5,7 +5,7 @@
     <input placeholder="{{action}} Name" matInput [(ngModel)]="local_data.name">
     
   </mat-form-field>
-  <mat-form-field *ngIf="action != 'Delete'; else elseTemplate">
+  <mat-form-field *ngIf="action != 'Delete';">
     <input placeholder="{{action}} Company" matInput [(ngModel)]="local_data.company">
     
   </mat-form-field>
@@ -13,7 +13,14 @@
     Sure to delete <b>{{local_data.name}}</b>?
   </ng-template>
 </div>
-<div mat-dialog-actions>
-  <button mat-button (click)="doAction()">{{action}}</button>
+<div mat-dialog-actions *ngIf="action == 'Update'; else otherAction">
+  <button mat-button (click)="doUpdate()">{{action}}</button>
   <button mat-button (click)="closeDialog()" mat-flat-button >Cancel</button>
 </div>
+<ng-template #otherAction>
+  <div mat-dialog-actions >
+    <button mat-button (click)="doAction()">{{action}}</button>
+    <button mat-button (click)="closeDialog()" mat-flat-button >Cancel</button>
+    
+  </div>
+</ng-template>
